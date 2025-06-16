@@ -58,6 +58,36 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header *******/
+#menu {
+    display : flex;
+    justify-content: flex-end;
+    gap : 68px;
+    list-style : none;
+    margin : 0;
+    padding : 0;
+}
+
+#menu li:hover{
+    border-top :2px #0065FC solid;
+    color : #0065FC
+}
+
+.logo-booki {
+    width : 61.09px;
+    height : 19px;
+    top : 30px;
+    left : 50px;
+    padding : 0px 50px 0% 0px ;
+    gap : 10px ;
+    
+}
+header {
+    margin: bottom 75px;  
+}
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -165,3 +195,4 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
