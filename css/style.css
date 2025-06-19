@@ -186,7 +186,9 @@ header {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
+    gap : 30px;
+    align-items: flex-start;
+    margin-top: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -201,6 +203,7 @@ header {
     align-items: center;
     gap : 10px;
     font-size: 16px;
+    margin-bottom: 30px;
 }
 .info i {
     display: flex;
@@ -211,14 +214,61 @@ header {
     height: 24px;
     border:1px solid #d9d9d9;
     font-size: 10px;
-    
-}
+    }
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: calc(68% - 15px);
+    padding : 30px;  
+    }
+
+.hebergements-title h2  {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+    }
+.cartes-hebergements img{
+    width : 100%;
+    min-width: 0%;
+    height : 124px;
+    object-fit: cover;
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px;
+} 
+.hebergements .cartes-hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom :30px;
+    gap:30px;
 }
 
+.cartes-hebergements .card-title{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.cartes-hebergements .card-subtitle {
+    margin: 0;
+}
+.cartes-hebergements .card-rating {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.cartes-hebergements .card {
+        margin-top: 33px;
+        padding : 5px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 calc((100% - (2 * 30px)) / 3); /*permet de calculer la largeur en % sur chaque .card : 100%=largeur.cartes-hebergments ; (2*30px)=soustrait la largeur entre les 3 cartes
+        /3 = divise le largeur restante par le nombre de cartes sur la ligne*/
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+.hebergements a:last-child{
+    font-weight: bold;
+    font-size: 18px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -263,9 +313,6 @@ header {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
