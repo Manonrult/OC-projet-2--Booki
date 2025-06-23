@@ -58,6 +58,15 @@ a {
     color: var(--main-bg-color)
 }
 
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size : 16px;
+}
 /****** Header *******/
 #menu {
     display : flex;
@@ -333,7 +342,7 @@ header {
     
 }
 
-.cartes-activites h3{
+.cartes-activites h4{
     padding: 10px 19px 20px 19px;
     margin-top: 5px;
 }
@@ -349,7 +358,25 @@ header {
     flex: 0 0 calc((100% - 389px) / 3)
 }
 
+/******** Footer ********/
+.footer{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 230px;
+    background-color:#F2F2F2 ;
+}
+.footer li{
+    list-style: none;
+    margin-bottom: 16px;
+    }
+.footer ul{
+    padding-left: 0px;
+}
 
+.colonne-footer {
+    padding : 0px 15px;
+}
 /* Le code ci-dessous correspond Ã  la version responsive uniquement */
 
 /****** Media queries ***********/
