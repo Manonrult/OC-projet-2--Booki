@@ -68,13 +68,27 @@ h4{
     font-size : 15.5px;
 }
 /****** Header *******/
+header {
+    width: 100%;
+    margin: bottom 75px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 20px 0 0;
+}
+
 #menu {
     display : flex;
-    justify-content: flex-end;
-    gap : 68px;
     list-style : none;
     margin : 0;
     padding : 0;
+}
+
+#menu li{
+    margin-left: 40px;
 }
 
 #menu li:hover{
@@ -83,33 +97,34 @@ h4{
 }
 
 .logo-booki {
-    width : 61.09px;
-    height : 19px;
-    top : 30px;
-    left : 50px;
-    padding : 0px 50px 0% 0px ;
-    gap : 10px ;
-    
+    width : 5%;
+    height : auto;
+    margin : 20px 0px 0px 0px;
 }
-header {
-    margin: bottom 75px;  
+h1{
+    font-size: 2em;
+    max-width: 80%;
+}
+.sous-titre{
+    max-width: 80%;
+    font-size:1.1em;
 }
 /******Recherches******/
 .barre-recherche {
     display: flex;
     align-items: center;
-    width : 377px;
-    height : 49px;
-    margin: 50px 0px;
-        }
+    width : 30%;
+    max-width: 500px;
+    height: 6%;
+}
     
 .recherche-form {
     display: flex;
-    flex-grow:  1; ;
+    flex-grow: 1;
     margin : 0;
     padding: 0;
     height : 49px;  
-      }
+}
 
 .recherche-form input[type="text"]{
     flex-grow: 1;
@@ -133,9 +148,16 @@ header {
     border-top-right-radius: 15px;
     border-bottom-right-radius:15px ;
     padding : 13px 16px;
-    height: 49px;
     box-sizing: border-box;
-    }
+}
+
+.texte-bouton {
+    display: inline;
+}
+
+.btn-rechercher .icone-loupe {
+    display: none;
+}
 
 .barre-recherche i{
     background-color: #F2F2F2;
@@ -160,9 +182,10 @@ header {
    gap : 12px;
    padding-left: 0px;
    align-items: center;
-   
 }
+
 .texte-filtre{
+    white-space: nowrap;
     font-size : 16px;
     font-weight: bold;
 }
@@ -172,17 +195,18 @@ header {
     background-color: #FFFFFF;
     border:2px solid #d9d9d9;
     padding: 4px 19px;
-    gap : 10px;
+    gap: 10px;
     height: 50px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     }
 
 .liste-filtres .boutons-container{
     display: flex;
     flex-wrap: wrap;
-    gap : 15px;
+    gap: 15px;
     flex-grow: 1;
 }
 
@@ -487,6 +511,7 @@ header {
         font-size: 14px;     
 
     }
+
     .cartes-hebergements .card-subtitle{
         font-size: 13px;
     }
@@ -498,6 +523,7 @@ header {
     .cartes-activites .card{
         aspect-ratio: 193.5 / 270;    
     }
+
     .cartes-activites .card-content{
         display: flex;
         flex-wrap: wrap;
@@ -510,7 +536,6 @@ header {
         flex-direction: column;
         align-items: flex;
         gap: 20px;
-        
     }
 
     .liste-filtres li:first-child{
@@ -518,7 +543,6 @@ header {
         margin-bottom: 10px;
         width : 100%;
         text-align: left; 
-
     }
 
     .liste-filtres li:not(:first-child){
@@ -533,9 +557,11 @@ header {
     .footer{
         gap:20px;
     }
+
     .footer li{
         font-size: 12px;
     }
+
     .footer ul{
         font-size: 15px;
     }
@@ -544,6 +570,128 @@ header {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+/*****Header*****/
+ nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .logo-booki {
+    display: flex;
+    align-items: center;
+    width: 15%;
+ }
+
+ #menu {
+    flex-direction: row; 
+    width: 100%; 
+    justify-content: space-between; 
+    border-bottom: 3px solid #F2F2F2; 
+   }
+
+ #menu li {
+    width: 100%; 
+    text-align: center; 
+    margin: 0; 
+    padding-top: 5%; 
+    padding-bottom: 3%;
+   }
+
+#menu li:hover {
+    padding-bottom: 3%;
+    border-top: 3px transparent solid;
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
 }
 
+.titre h1{
+    font-size: 1.5em;
+    max-width: 100%;
+    /*margin: 20px auto 10px auto;*/
+}
+
+.sous-titre{
+    font-size: 1em;
+    max-width: 100%;
+   /* margin : 0 8% 5% auto;*/
+}
+
+.header {
+    width: 80%;
+}
+
+/*****Recherches*****/
+.barre-recherche{
+    width: 20%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8%;
+    padding: 0 10px;
+    /*margin : 0 8% 5% 15%;*/
+}
+
+.barre-recherche i{
+    width: 45px;
+    height: 45px;
+}
+
+.recherche-form input[type="text"]{
+    height: 45px;
+    font-size: 13px;
+   /* padding: 0 10px;*/
+}
+.texte-bouton {
+    display: none;
+}
+.btn-rechercher .icone-loupe {
+    display: inline;
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+/*****Filtre*****/
+.liste-filtres .boutons-container{
+    justify-content: center;
+}
+
+.bouton-filtre{
+    flex: 1 1 45%;
+    max-width: 45%;
+    justify-content: center;
+    gap: 8px;
+}
+
+.texte-filtre {
+    font-size: 13px;
+}
+
+.image-filtre {
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 360px){
+
+#menu{
+    font-size: 13px;
+}
+    /*****Rechercher*****/
+.recherche-form input[type="text"]{
+    width : 115px;
+}
+
+/*****Filtre*****/
+.bouton-filtre {
+        gap: 5px;
+    }
+
+    .texte-filtre {
+        font-size: 11px;
+    }
+    
+    .image-filtre {
+        font-size: 13px;
+    }
+
+}
