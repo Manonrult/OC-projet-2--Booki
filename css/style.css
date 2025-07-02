@@ -268,7 +268,7 @@ h1{
     row-gap: 0px; 
 }
 
-.hebergements {
+#hebergements {
     width: 70vw ;
     padding : 30px;  
 }
@@ -314,7 +314,7 @@ h1{
  }
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 34%;
 }
 
 .populaires h2{
@@ -325,12 +325,13 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15.5px;
+    font-size: 14.5px;
 }
 
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    min-width: 200px;
 }
 
 .populaires-cards img {
@@ -352,7 +353,7 @@ h1{
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-    font-size: 14.5px;
+    font-size: 13.5px;
 }
 
 .populaires-cards .card-subtitle {
@@ -364,7 +365,7 @@ h1{
 }
 
 /*******Activités********/
-.activite {
+#activites {
     padding: 2%;
     margin-bottom: 3%;
 }
@@ -373,6 +374,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2%;
+    margin-bottom: 55px;
 }
 
  .cartes-activites .card {
@@ -401,7 +403,7 @@ h1{
 }
 
 .cartes-activites .card-title{
-    font-size: 92%;
+    font-size: 16px;
     margin: 0;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -485,7 +487,7 @@ h1{
         flex-direction: column;
     }
 
-    .hebergements {
+    #hebergements {
         width: 100%;
         padding-left: 1px;
     }
@@ -525,7 +527,7 @@ h1{
         font-size: 13px;
     }
 /*****Activités*****/
-    .activite{
+    #activites {
         padding: 2% 3%;
     }
 
@@ -693,8 +695,9 @@ h1{
     font-size: 16px;
 }
 
-.hebergements{
+#hebergements {
     background-color: transparent !important;
+    width: 100%;
 }
 
 .cartes-hebergements{
@@ -703,7 +706,7 @@ h1{
     gap: 0;
 }
 .cartes-hebergements a{
-    width: 100%;
+    width: 100% !important;
 }
 
 .cartes-hebergements .card-title{  
