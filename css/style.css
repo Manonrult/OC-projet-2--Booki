@@ -72,7 +72,7 @@ h4{
 /****** Header *******/
 header {
     width: 100%;
-    margin: bottom 75px;
+    margin-bottom: 35px;
 }
 
 nav {
@@ -463,7 +463,6 @@ h1{
 
     .liste-filtres{
         flex-direction: column;
-        align-items: flex;
         gap: 20px;
     }
 
