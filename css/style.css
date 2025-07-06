@@ -374,7 +374,6 @@ h1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2%;
-    margin-bottom: 55px;
 }
 
  .cartes-activites .card {
