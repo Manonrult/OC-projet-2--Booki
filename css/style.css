@@ -94,8 +94,8 @@ nav {
 }
 
 #menu li:hover{
-    border-top :2px #0065FC solid;
-    color : #0065FC
+    border-top :2px var(--main-color)  solid;
+    color: var(--main-color)
 }
 
 .logo-booki {
@@ -133,7 +133,7 @@ h1{
 .recherche-form input[type="text"]{
     flex-grow: 1;
     height : 49px;
-    border : 1px solid #F2F2F2;
+    border : 1px solid var(--main-bg-color);
     border-left: none;
     border-right: none;
     font-size: 18px;
@@ -146,7 +146,7 @@ h1{
 .btn-rechercher {
     font-size: 18px;
     font-weight: bold;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color :#FFFFFF;
     border : none;
     border-top-right-radius: 15px;
@@ -164,7 +164,7 @@ h1{
 }
 
 .barre-recherche i{
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     color:#333;
     width: 50px;
     flex-shrink: 0;
@@ -222,7 +222,7 @@ h1{
 }
 
 .bouton-filtre:hover{
-    background-color:#DEEBFF;
+    background-color:var(--filter-bg-color);
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -414,7 +414,7 @@ h1{
     justify-content: flex-start;
     padding: 12px 12px;
     gap: 15px;
-    background-color:#F2F2F2 ;
+    background-color: var(--main-bg-color) ;
     margin-top: 0px;
 }
 
@@ -499,6 +499,7 @@ h1{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding-right: 10px;
     }
 
     .populaires-cards a {
@@ -538,7 +539,10 @@ h1{
         flex-wrap: wrap;
         height: 15%;
         align-items: center;
-        font-size: 80%;
+    }
+
+    .cartes-activites .card-title{
+        font-size: 14px;
     }
 
 /*****Footer*****/   
@@ -578,7 +582,7 @@ h1{
     flex-direction: row; 
     width: 100%; 
     justify-content: space-between; 
-    border-bottom: 3px solid #F2F2F2; 
+    border-bottom: 3px solid var(--main-bg-color); 
    }
 
  #menu li {
@@ -592,8 +596,8 @@ h1{
 #menu li:hover {
     padding-bottom: 3%;
     border-top: 3px transparent solid;
-    border-bottom: 3px solid #0065FC;
-    color: #0065FC;
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
 }
 
 .titre h1{
@@ -638,7 +642,7 @@ h1{
 
 .btn-rechercher .icone-loupe {
     display: inline;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: #FFFFFF;
     margin-left: 0%;
 }
